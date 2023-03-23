@@ -21,7 +21,7 @@ app.use(cookieParser());
 //upload images
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, '../Frontend/public/upload');
+    cb(null, '../Frontendx/public/upload');
   },
   filename: function (req, file, cb) {
     cb(null, Date.now() + file.originalname);
